@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Home | Page</title>
+	
+	<script  src="jquery-3.3.1.js"></script>
+	<script  src="area.js"></script>
+	<script  src="donorfind.js"></script>
+</head>
+<body>
+
+
+<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 	<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button><a href="/home/myrequest">MY ALL REQUEST </a></button></td>
+	 		<td><button><a href="/home/postbloodrequest">Request blood </a></button></td>
+	 		<td><button><a href="/home/bloodbank">Find blood bank </a></button></td>
+	 		<td><button ><a href="/home/finddonor">Find donlor  </a></button></td>
+	 		<td><button ><a href="/home/profile">Profile </a></button>||<button><a href="/logout">Log Out</a></button></td>	
+	 	
+	 	</tr>
+
+
+	 </table>
+
+      </div>
+
+	<h1>Welcome <%=name %></h1>
+
+	
+
+		<h2 align="center"> the Blood Request</h2>
+
+
+		
+			
+			<% for(var i=0;i<post.length;i++){%>
+			<div border=1 align="center" width="80%">
+				<h4><%= post[i].name %></h4>
+				<h4>need: <%= post[i].bg %>  blood with in <%= post[i].rdate %></h4>
+				 <p>patient is in <%= post[i].area %></p>
+					
+					<p>mobile number :<%= post[i].phn %>
+					his email address is :<%= post[i].email %></p>
+					
+					<a href="/home/email/<%= post[i].email%>">you want to donate</a> 
+				<p align="right">posted on <%= post[i].pdate %></p>
+
+            </div>
+
+			<% } %>
+		
+		
+</body>
+</html>

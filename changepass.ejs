@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Profile page</title>
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../passvali.js"></script>
+</head>
+<body>
+
+
+<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 		<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button ><a href="/home/profile">Profile </a></button>||<button><a href="/logout">Log Out</a></button></td>
+	 	
+	 	</tr>
+	 	<tr>
+	 		<td colspan="1" align="right"><button ><a href="/home/changepass">Change password </a></button></a></button></td>
+	 	</tr>
+	   </table>
+</div>
+
+<form method="post">
+	<p name="email" value=<% email %> > <% email %></p> 
+     <table>
+     	
+      <tr>
+      	<td>Enter Old Password	</td>
+      	<td>
+      		<input type="Password" name="oldpass"></input>
+
+      	</td>
+      	<td></td>
+
+      </tr>
+      <tr>
+      	<td>NEW Password</td>
+      	<td>
+      	<input type="Password" name="newpass" id="newpass"></input>
+       </td>
+         <td id="erpass">
+
+      	</td>
+
+      </tr>
+       <tr>
+      	<td>Submit Change </td>
+      	<td>
+      	<input type="submit" value="submit"></input>
+
+      	</td>
+
+      </tr>
+
+     </table>
+
+
+</form>
+
+</body>

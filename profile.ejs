@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Home | Page</title>
+</head>
+<body>
+
+
+<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 		<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button ><a href="/home/profile">Profile </a></button>||<button><a href="/logout">Log Out</a></button></td>
+	 	</tr>
+	 	<tr>
+	 		<td colspan="2" align="right"><button ><a href="/home/changepass">change password </a></button></a></button></td>
+	 	</tr>
+	 </table>
+
+</div>
+<div style="background-color:#00CED1;">
+      <table align="center">
+    
+	   <tr>
+	   	 <td colspan="2"><h1>Welcome TO Profile <%=name %></h1></td>
+	   	 <td></td>
+	   </tr>
+
+	   <tr>
+	   	 <td>name</td>
+	   	 <td><%= mydata[0].name %></td>
+	   </tr>
+	   <tr>
+	   	 <td>Email</td>
+	   	 <td><%= mydata[0].email %></td>
+	   </tr>
+	   <tr>
+	   	 <td>DIVISION</td>
+	   	 <td><%= mydata[0].divi %></td>
+	   </tr>
+	   <tr>
+	   	 <td>Area</td>
+	   	 <td><%= mydata[0].area %></td>
+	   </tr>
+	   <tr>
+	   	 <td>BLood Group</td>
+	   	 <td><%= mydata[0].bg %></td>
+	   </tr>
+	   <tr>
+	   	 <td>Phone number</td>
+	   	 <td><%= mydata[0].phn %></td>
+	   </tr>
+
+	 </table>
+	</div>	
+		 
+		
+		
+</body>
+</html>

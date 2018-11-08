@@ -1,0 +1,80 @@
+<html>
+<head>
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../area.js"></script>
+
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>alll your blood request post</title>
+  <link rel="stylesheet"type="text/css"href="../jquery-ui/jquery-ui.css">
+<link rel="stylesheet"type="text/css"href="../jquery-ui/jquery-ui.structure.css">
+<link rel="stylesheet"type="text/css"href="../jquery-ui/jquery-ui.theme.css">
+ 
+ <script src="../testui.js"></script> 
+ <script src="../jquery-ui/jquery-ui.js"></script> 
+
+	<style type="text/css">textarea[name=mes]{
+						font-size: 10px;
+						height:100px; // for say a select
+						width: 150px;
+						}</style>
+
+</head>
+<body>
+	<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 		<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button><a href="/home/myrequest">MY ALL REQUEST </a></button></td>
+	 		<td><button><a href="/home/postbloodrequest">Request blood </a></button></td>
+	 		<td><button ><a href="/home/finddonor">Find donor  </a></button></td>
+	 		<td><button><a href="/logout">Log Out</a></button></td>
+	 	
+	 	</tr>
+
+
+	 </table>
+
+
+	 <% var ln=0;
+	 for(var i=0;i<post.length;i++){
+
+         ln++;
+     }
+
+
+	 %>
+
+
+      </div>
+      <h3><% var ln=post.size %></h3>
+
+
+		<h2><%=name %> here is your all post</h2>
+		<div id="accordion">
+		<% for(var i=0;i<post.length;i++){%>
+			<h3><%= post[i].pdate %></h3>
+		
+
+			
+			<div>
+				<p>
+			
+				<p><%= post[i].name %>
+				need <%= post[i].bg %>with in <%= post[i].rdate %>
+				 patient is in <%= post[i].area %>  his mobile number: <%= post[i].phn %>    
+					his email address is : <%= post[i].email %></p>
+				<p align="right">need within <%= post[i].pdate %></p>
+				<a href="/home/delete/<%= post[i].pid %>">Delete Post </a>
+			</p>
+            </div>
+           
+
+			<% } %>
+			 </div>
+
+		
+		
+</body>
+</html>

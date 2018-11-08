@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Edit | Page</title>
+</head>
+<body>
+	<form method="post">
+		<p name="email" value="<%=email %>"><p/>
+			<div style="background-color:red;" size="35">
+			<table align="center" width="150%">
+				<tr>
+					<td><a href="/admin">Back</a><button><a href="/admin">HOME  </a></button></td>
+					<td><button><a href="/logout">Log Out</a></button></td>
+			
+				</tr>
+
+
+			</table>
+			<table align="center" style="background-color: skyblue;">
+				<tr>
+					<td>Old Password</td>
+					<td><input type="password" name="oldpass" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>New Password</td>
+					<td><input type="password" name="newpass" id="newpass" /></td>
+					<td id="erpass"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Save" /></td>
+				</tr>
+			</table>
+
+			</div>
+	</form>
+</body>
+</html>

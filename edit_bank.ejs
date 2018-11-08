@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Edit | Page</title>
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../area.js"></script>
+	<script  src="editbank.js"></script>
+</head>
+<body>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id %>"/>
+		<div style="background-color:red;" size="35">
+			<table align="center" width="150%">
+				<tr>
+					<td><a href="/admin/view_bank">Back</a><button><a href="/admin">HOME  </a></button></td>
+					<td><button><a href="/logout">Log Out</a></button></td>
+			
+				</tr>
+				<tr>
+
+		     			<h1>Edit Bank Details</h1>
+				     
+				    </tr>
+
+
+			</table>
+			<table align="center" style="background-color: skyblue">
+		
+				<tr>
+					<td>Blood Bank Name </td>
+					<th><input type="text" name="gname" id="name" value="<%=gname%>" /></th>
+					<th id="ername"></th>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<th><input type="text" name="email" id="email" value="<%=email%>" /></th>
+					<th id="eremail"></th>
+				</tr>
+				<tr>
+					<td>Contact</td>
+					<th><input type="text" name="phn" id="phn" value="<%=phn%>" /></th>
+					<th id="erphn"></th>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Save" /></td>
+				</tr>
+			</table>
+
+		</div>
+		
+	</form>
+</body>
+</html>

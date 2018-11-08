@@ -1,0 +1,101 @@
+<html>
+<head>
+	<title>Home | Page</title>
+	
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../area.js"></script>
+	<script  src="../regveli.js"></script>
+</head>
+<body >
+	<div><button><a href="/login">back to login </a></button></div>
+
+	<table>
+     <form method="post"  >
+     	<h1>Create new account</h1>
+     	<h4 id="notice"></h4>
+		     <tr>
+		     	<th>Name</th>
+		     	<th><input type="text" name="name" id="name"></th>
+		     	<th id="ername"></th>
+		     </tr>
+		      <tr>
+		     	<th>Email</td>
+		     	<th><input type="text" name="email" id="email"></th>
+		     	<th id="eremail"></th>
+		     </tr>
+		     <tr>
+		     	<th>select blood Group</th>
+		     	 <th><select name="bg" id="bg">
+		     	 	 <option value="" selected></option>
+					  <option value="A+">A Pos</option>
+					  <option value="B+">B Pos</option>
+					  <option value="AB+">AB Pos</option>
+					  <option value="O+">O Pos</option>
+					  <option value="A-">A Neg</option>
+					  <option value="B-">B Neg</option>
+					  <option value="AB-">AB Neg</option>
+					  <option value="O-">O Neg</option>
+					</select>      
+                 </th>
+                 <th id="erbg"></th>
+		     </tr>
+		      <tr>
+		     	<th>Phone number</th>
+		     	<th><input type="text" name="phn" id="phn"></th>
+		     	<td id="erphn"></td>
+		     </tr>
+		      <tr>
+		     	<td> select Divition</td>
+		     	<td><select id="divi" name="divi">
+
+		     		  <option value="" selected></option>
+		     		  <option value="Barisal">Barisal</option>
+					  <option value="Dhaka">Dhaka</option>
+					  <option value="Chittagong">Chittagong</option>
+					  <option value="Khulna">Khulna</option>
+					  <option value="Mymensingh">Mymensingh</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rangpur">Rangpur</option>
+					  <option value="Sylhet">Sylhet</option>
+					  
+					  
+					</select></td>
+					<td id="erdivi"></td>
+		     </tr>
+
+		      <tr>
+
+		     	<th>Area</th>
+		     	<th><select id="area" name="area">
+		     		<option value=""></option>
+					</select></th>
+					<td id="erarea"></td>
+		     </tr>
+
+		      <tr>
+		     	<th>date of birth</th>
+		     	<th><input type="date" name="dob" id="date"></th>
+		     	<td id="erdate"></td>
+		      </tr>
+		     <tr>
+		     	<th>password</th>
+		     	<th><input type="password" value="" name="pass" id="pass"></th>
+		     	<td id="erpass"></td>
+		     </tr>
+				
+
+		      <tr>
+		     	<th>submit</th>
+		     	<th><input type="submit" value="submit"></th>
+		     </tr>
+
+
+     </form>
+
+
+
+		</table>
+		
+</body>
+</html>

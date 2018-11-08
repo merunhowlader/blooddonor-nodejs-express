@@ -1,0 +1,113 @@
+<html>
+<head>
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../area.js"></script>
+	<script  src="../postveli.js"></script>
+
+	<style type="text/css">textarea[name=mes]{
+						font-size: 10px;
+						height:100px; // for say a select
+						width: 150px;
+						}</style>
+
+</head>
+<body>
+	<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 		<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button><a href="/home/myrequest">MY ALL REQUEST </a></button></td>
+	 		<td><button><a href="/home/postbloodrequest">Request blood </a></button></td>
+	 		<td><button ><a href="/home/finddonor">Find donor  </a></button></td>
+	 		<td><button><a href="/logout">Log Out</a></button></td>
+	 	
+	 	</tr>
+
+
+	 </table>
+
+      </div>
+     
+
+        
+<form method="post">
+	
+          
+	<input type="text" name="email" value= <%= email%> hidden > </input>
+
+	
+<table>
+
+	
+	<tr>
+		     	<th>Patient blood Group</th>
+		     	 <th><select name="bg" id="bg">
+		     	 	 <option value="" selected></option>
+					  <option value="A+">A Pos</option>
+					  <option value="B+">B Pos</option>
+					  <option value="AB+">AB Pos</option>
+					  <option value="O+">O Pos</option>
+					  <option value="A-">A Neg</option>
+					  <option value="B-">B Neg</option>
+					  <option value="AB-">AB Neg</option>
+					  <option value="O-">O Neg</option>
+					</select>      
+                 </th>
+                 <td id="erbg"></td>
+
+		     </tr>
+		      <tr>
+		     	<th>Patient Phone number</th>
+		     	<th><input type="text" name="phn" id="phn"></th>
+		     	<td id="erphn"></td>
+		     </tr>
+		      <tr>
+		     	<th> Patient is in Divition</th>
+		     	<th><select id="divi" name="divi">
+
+		     		 <option value="" selected></option>
+		     		  <option value="barisal">Barisal</option>
+					  <option value="dhaka">Dhaka</option>
+					  <option value="Chittagong">Chittagong</option>
+					  <option value="Khulna">Khulna</option>
+					  <option value="Mymensingh">Mymensingh</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rangpur">Rangpur</option>
+					  <option value="Sylhet">Sylhet</option>
+					  
+					</select></th>
+					<td id="erdivi"></td>
+		     </tr>
+
+
+		      <tr>
+
+		     	<th>Patient is in Area</th>
+		     	<th><select id="area" name="area">
+		     		<option value=""></option>
+					</select></th>
+					<td id="erarea"></td>
+		       </tr>
+
+		      <tr>
+		     	<th>Date neede BLOOD</th>
+		     	<th><input type="date" name="rdate" id="date"></th>
+		     	<td id="erdate"></td>
+		      </tr>
+		      <tr>
+		     	<th align="right">POST</th>
+		     	<th><input type="submit" value="post"></th>
+		      </tr>
+
+
+
+
+
+</table>
+
+
+</form>
+</body>
+
+</html>

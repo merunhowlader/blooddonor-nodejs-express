@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Home | Page</title>
+	
+	<script  src="../jquery-3.3.1.js"></script>
+	<script  src="../area.js"></script>
+	<script  src="../donorfind.js"></script>
+</head>
+<body>
+
+
+<div style="background-color:red;" size="35">
+		 <table align="center" width="100%">
+	 	<tr>
+	 		<td><button><a href="/home">HOME  </a></button></td>
+	 		<td><button><a href="/home/myrequest">MY ALL REQUEST </a></button></td>
+	 		<td><button><a href="/home/postbloodrequest">Request blood </a></button></td>
+	 		<td><button ><a href="/home/finddonor">Find donor  </a></button></td>
+	 		<td><button><a href="/logout">Log Out</a></button></td>
+	 	
+	 	</tr>
+
+
+	 </table>
+
+      </div>
+
+
+	<h1>Welcome <%=name %></h1>
+
+         
+
+
+		<br/>
+		
+		<br/><br/><br/>
+
+		<div>
+			<table>
+				<tr><h1>Find Blood Donor<h1></tr> 
+				<tr>
+				<td>select devision</td>
+				<td><select id="divi" name="divi">
+
+		     		  <option value="" selected></option>
+		     		  <option value="Barisal">Barisal</option>
+					  <option value="Dhaka">Dhaka</option>
+					  <option value="Chittagong">Chittagong</option>
+					  <option value="Khulna">Khulna</option>
+					  <option value="Mymensingh">Mymensingh</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rajshahi">Rajshahi</option>
+					  <option value="Rangpur">Rangpur</option>
+					  <option value="Sylhet">Sylhet</option>  
+					</select></td>
+				
+		     <td>Area</td>
+		     	<td><select id="area" name="area">
+		     		<option value=""></option>
+					</select></th>
+		       </td>
+		        <th>select blood Group</th>
+		     	 <td><select name="bg" id="bg">
+		     	 	 <option value="" selected></option>
+					  <option value="A+">A Pos</option>
+					  <option value="B+">B Pos</option>
+					  <option value="AB+">AB Pos</option>
+					  <option value="O+">O Pos</option>
+					  <option value="A-">A Neg</option>
+					  <option value="B-">B Neg</option>
+					  <option value="AB-">AB Neg</option>
+					  <option value="O-">O Neg</option>
+					</select>      
+                 </td>
+                 <td> <button id="d">search</button></td>
+
+
+		       </tr>
+		       <tr>
+		       	<td colspan="5">
+
+		       <div id="donorshow"></div>
+             </td>
+            </tr>
+
+			</table>
+
+
+		</div>
+
+	</body>
